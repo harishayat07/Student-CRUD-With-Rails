@@ -1,0 +1,17 @@
+<h1>List of Students</h1>
+
+<%# <%= link_to('ADD NEW STUDENT',new_student_path, :class=> 'action new')%>
+<table>
+
+<% @allstudents.each do |obj| %>
+<tr> 
+<td> <%=obj.name%></td>
+<td> <%= button_to 'show',student_path(obj), method: 'get'%></td>
+<td> <%= button_to 'edit',edit_student_path(obj), method: 'get' %></td>
+<td> <%= button_to 'delete',student_path(obj), method: 'delete', data:{confirm:"are you sure?"}%></td>
+</tr>
+<%end%>
+</table>
+
+
+<%= link_to "Add New Book",new_student_path %>
