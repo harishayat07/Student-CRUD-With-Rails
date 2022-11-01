@@ -1,5 +1,28 @@
 <h1>Add new student</h1>
 
+Usig form For
+<%= form_for @student do |f|%>
+<%# <%= render(:partial => 'form', :locals => {:f => f})%> 
+<%= f.label :name%><br>
+<%= f.text_field :name%><br>
+
+<%= f.label :age%><br>
+<%= f.text_field :age%><br><br>
+<%# <%= f.text_field :name, placeholder:"Enter name" %>
+<%# <%= f.text_field :age, placeholder:"Enter age" %> 
+<%= f.submit("save")%><br>
+<%end%>
+<br>
+Using form with
+
 <%= form_with model: @student do |f|%>
-<%= render(:partial => 'form', :locals => {:f => f})%>
+<%# <%= render(:partial => 'form', :locals => {:f => f})%> 
+<%= f.label :name%><br>
+<%= f.text_field :name%><br>
+
+<%= f.label :age%><br>
+<%= f.text_field :age%><br><br>
+<%# <%= f.text_field :name, placeholder:"Enter name" %>
+<%# <%= f.text_field :age, placeholder:"Enter age" %> 
+<%= f.submit("save")%><br>
 <%end%>

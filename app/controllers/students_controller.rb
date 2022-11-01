@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
 
   def create   # no id
     @student = Student.new(student_params)   
-    if @student.save    
+    if @student.save 
       flash[:notice] = 'student added!'   
       redirect_to root_path   
     else   

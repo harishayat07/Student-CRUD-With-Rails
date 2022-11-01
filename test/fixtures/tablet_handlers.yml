@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  issue_date: 2022-11-01
+  tablet: one
+
+two:
+  issue_date: 2022-11-01
+  tablet: two
